@@ -57,6 +57,7 @@
       }
       @include tablet() {
         justify-content: flex-end;
+        align-items: center;
         grid-column: 2/2;
         grid-row: 1/1;
         img {
