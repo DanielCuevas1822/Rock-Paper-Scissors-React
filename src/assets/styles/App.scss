@@ -1,0 +1,11 @@
+@import "../styles/scss/Vars.scss";
+@import "../styles/scss/Mixins.scss";
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap");
+
+* {
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+body {
+  background-image: repeating-radial-gradient($Radial-Gradient);
+}
