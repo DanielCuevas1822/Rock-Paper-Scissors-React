@@ -1,0 +1,28 @@
+@mixin mobil() {
+  @media (min-width: 300px) {
+    @content;
+  }
+}
+
+@mixin tablet() {
+  @media (min-width: 700px) {
+    @content;
+  }
+}
+
+@mixin desktop() {
+  @media (min-width: 1000px) {
+    @content;
+  }
+}
+
+@mixin flex-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin full-screen {
+  height: 100vh;
+  width: 100vw;
+}
