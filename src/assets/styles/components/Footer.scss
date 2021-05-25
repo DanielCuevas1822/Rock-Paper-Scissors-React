@@ -1,0 +1,19 @@
+@import "../scss/Functions.scss";
+@import "../scss/Mixins.scss";
+
+.footer {
+  display: flex;
+  @include mobil() {
+    justify-content: center;
+    padding: rem(50) 0;
+  }
+  @include tablet() {
+    justify-content: flex-end;
+    padding: rem(20) rem(30);
+  }
+  &__button {
+    color: white;
+    background-color: transparent;
+    width: rem(110);
+  }
+}
