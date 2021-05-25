@@ -1,5 +1,6 @@
 @import "../scss/Functions.scss";
 @import "../scss/Mixins.scss";
+@import "../scss/Vars.scss";
 
 .footer {
   display: flex;
@@ -12,6 +13,7 @@
     padding: rem(20) rem(30);
   }
   &__button {
+    border: $Header-Outline solid rem(2);
     color: white;
     background-color: transparent;
     width: rem(110);
