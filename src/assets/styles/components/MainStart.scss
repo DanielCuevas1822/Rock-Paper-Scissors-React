@@ -3,7 +3,7 @@
 @import "../scss//Vars.scss";
 main {
   @include flex-centered();
-  .main {
+  .main__start {
     position: relative;
     height: 50vh;
     @include mobil() {
