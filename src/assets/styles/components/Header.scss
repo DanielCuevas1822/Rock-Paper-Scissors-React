@@ -1,0 +1,51 @@
+@import "../scss/Functions.scss";
+@import "../scss/Mixins.scss";
+@import "../scss/Vars.scss";
+header {
+  display: flex;
+  justify-content: center;
+  .header {
+    border: $Header-Outline solid rem(2);
+    border-radius: rem(10);
+    margin: rem(40) 0;
+    @include flex-centered();
+    justify-content: space-between;
+    @include mobil() {
+      width: rem(350);
+      padding: rem(9);
+    }
+    @include tablet() {
+      width: rem(700);
+      padding: rem(20);
+    }
+    &__logo {
+      @include mobil() {
+        height: 65%;
+      }
+      @include tablet() {
+        height: 100%;
+      }
+    }
+    &__score {
+      @include mobil() {
+        padding: rem(5) rem(25);
+      }
+      @include tablet() {
+        padding: rem(5) rem(40);
+      }
+      max-height: 100px;
+      background-color: white;
+      border-radius: rem(10);
+      color: $Dark-Text;
+
+      text-align: center;
+      &__title {
+        font-size: 20px;
+        text-transform: uppercase;
+      }
+      &__score {
+        font-size: 40px;
+      }
+    }
+  }
+}
