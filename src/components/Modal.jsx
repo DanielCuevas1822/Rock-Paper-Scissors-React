@@ -5,12 +5,15 @@ import "../assets/styles/components/Modal.scss";
 import imageRules from "../assets/images/image-rules.svg";
 import iconClose from "../assets/images/icon-close.svg";
 
-const Modal = () => {
+const Modal = (props) => {
+  const { handleModal, showModal } = props;
+
   const handleClick = () => {
-    console.log("close");
+    handleModal();
   };
+
   return (
-    <div className="modal hide">
+    <div className={`modal ${showModal ? "show" : "hide"}`}>
       <div className="modal__container">
         <div className="modal__container__title">
           <p>Rules</p>
