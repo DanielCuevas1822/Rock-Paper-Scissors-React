@@ -1,11 +1,33 @@
 @import "../scss/Functions.scss";
 @import "../scss/Mixins.scss";
-.scissors,
-.paper,
-.rock {
-  border: 20px solid transparent;
-  padding: rem(30);
-  border-radius: 50%;
+.start {
+  .scissors,
+  .paper,
+  .rock {
+    border: 20px solid transparent;
+    padding: rem(30);
+    border-radius: 50%;
+    height: rem(150);
+  }
+}
+
+.playing {
+  .scissors,
+  .paper,
+  .rock {
+    @include mobil() {
+      border: 20px solid transparent;
+      padding: rem(30);
+      border-radius: 50%;
+      height: rem(150);
+    }
+    @include tablet() {
+      border: 30px solid transparent;
+      padding: rem(50);
+      border-radius: 50%;
+      height: rem(260);
+    }
+  }
 }
 
 .scissors {
@@ -18,4 +40,17 @@
 
 .rock {
   @include linear-gradient($Rock-Gradient);
+}
+
+.selecting {
+  @include mobil() {
+    width: rem(100);
+    height: rem(100);
+  }
+  @include tablet() {
+    width: rem(250);
+    height: rem(250);
+  }
+  border-radius: 50%;
+  background: rgba(34, 32, 32, 0.3);
 }
