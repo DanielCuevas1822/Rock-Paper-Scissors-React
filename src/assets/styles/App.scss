@@ -1,6 +1,7 @@
 @import "../styles/scss/Vars.scss";
 @import "../styles/scss/Mixins.scss";
 @import "../styles/scss/Functions.scss";
+@import "../styles/components/Buttons.scss";
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap");
 
 * {
@@ -9,11 +10,4 @@
 
 body {
   background-image: repeating-radial-gradient($Radial-Gradient);
-}
-
-.btn {
-  border-radius: 10px;
-  padding-top: rem(6);
-  padding-bottom: rem(6);
-  text-transform: uppercase;
 }

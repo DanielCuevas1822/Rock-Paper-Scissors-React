@@ -1,0 +1,13 @@
+@import "../scss/Vars.scss";
+@import "../scss/Functions.scss";
+.btn {
+  border-radius: 10px;
+  padding-top: rem(6);
+  padding-bottom: rem(6);
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  background-color: white;
+  color: $Rock-Gradient;
+}
