@@ -1,0 +1,21 @@
+@import "../scss/Functions.scss";
+@import "../scss/Mixins.scss";
+.scissors,
+.paper,
+.rock {
+  border: 20px solid transparent;
+  padding: rem(30);
+  border-radius: 50%;
+}
+
+.scissors {
+  @include linear-gradient($Scissors-Gradient);
+}
+
+.paper {
+  @include linear-gradient($Paper-Gradient);
+}
+
+.rock {
+  @include linear-gradient($Rock-Gradient);
+}
