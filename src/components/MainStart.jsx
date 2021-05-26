@@ -9,12 +9,20 @@ import scissors from "../assets/images/icon-scissors.svg";
 
 const MainStart = () => {
   return (
-    <main>
+    <main className="start">
       <div className="main__start">
-        <img className="main__start__triangle" src={triangle} alt="triangle" />
-        <img className="main__start__paper" src={paper} alt="paper" />
-        <img className="main__start__rock" src={rock} alt="rock" />
-        <img className="main__start__scissors" src={scissors} alt="scissors" />
+        <img
+          className="main__start__triangle triangle"
+          src={triangle}
+          alt="triangle"
+        />
+        <img className="main__start__paper paper" src={paper} alt="paper" />
+        <img className="main__start__rock rock" src={rock} alt="rock" />
+        <img
+          className="main__start__scissors scissors"
+          src={scissors}
+          alt="scissors"
+        />
       </div>
     </main>
   );

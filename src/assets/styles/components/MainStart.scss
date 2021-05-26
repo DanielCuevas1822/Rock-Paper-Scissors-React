@@ -1,8 +1,11 @@
 @import "../scss/Mixins.scss";
 @import "../scss/Functions.scss";
 @import "../scss//Vars.scss";
-main {
+.start {
   @include flex-centered();
+  .main__start > img {
+    position: absolute;
+  }
   .main__start {
     position: relative;
     height: 50vh;
@@ -12,23 +15,12 @@ main {
     @include tablet() {
       width: rem(400);
     }
-    &__scissors,
-    &__paper,
-    &__rock {
-      position: absolute;
-      border: 20px solid transparent;
-      padding: rem(30);
-      border-radius: 50%;
-    }
     &__triangle {
-      position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
     }
     &__paper {
-      background: linear-gradient(white, white) padding-box,
-        linear-gradient($Paper-Gradient) border-box;
       left: 0;
       @include mobil() {
         top: 0;
@@ -41,8 +33,6 @@ main {
       }
     }
     &__scissors {
-      background: linear-gradient(white, white) padding-box,
-        linear-gradient($Scissors-Gradient) border-box;
       right: 0;
       @include mobil() {
         top: 0;
@@ -55,8 +45,6 @@ main {
       }
     }
     &__rock {
-      background: linear-gradient(white, white) padding-box,
-        linear-gradient($Rock-Gradient) border-box;
       left: 50%;
       transform: translate(-50%);
       @include mobil() {
