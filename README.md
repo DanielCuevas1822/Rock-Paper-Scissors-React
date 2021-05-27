@@ -43,7 +43,7 @@ $ npm start
 
 # URL 📌
 
-__
+_https://danielcuevas1822.github.io/Rock-Paper-Scissors-React/_
 
 # Thanks 🎁
 
